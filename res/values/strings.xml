@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Day In History</string>
+    <string name="appwidget_text" translatable="false">00:00</string>
+    <string name="events_list">Events list</string>
+
+    <string name="pref_clock_type">Clock format</string>
+    <string name="pref_events_language">Events language</string>
+
+</resources>
