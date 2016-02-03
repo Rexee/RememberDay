@@ -1,7 +1,7 @@
 ### RememberDay
 
 ###### Android widget, showing clock and what's happened on this day in history
-![Google][Google] [Link to google play][GoogleTxt]
+![Google][Google] [Google Play link][GoogleTxt]
 
 ![main][Mainpng]
 
