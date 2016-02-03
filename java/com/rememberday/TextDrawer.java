@@ -44,21 +44,15 @@ public class TextDrawer {
     }
 
     private static void drawDayOfWeek(Calendar calendar, textProcessor drawer) {
-        String[] weekDaysFormat = {"Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"};
-
-        String timeText = weekDaysFormat[calendar.get(Calendar.DAY_OF_WEEK) - 1];
-
-        drawer.drawTextSecondary(timeText, TEXT_SIZE_DAY_OF_WEEK, R.id.imageView_Day_Of_Week);
-
-    }
+        SimpleDateFormat sdf = new SimpleDateFormat("EEEE", Locale.getDefault());
+        String timeText = sdf.format(calendar.getTime());
+        drawer.drawTextSecondary(timeText.substring(0, 1).toUpperCase() + timeText.substring(1), TEXT_SIZE_DAY_OF_WEEK, R.id.imageView_Day_Of_Week);
+   }
 
     private static void drawDayOfYear(Calendar calendar, textProcessor drawer) {
-        String[] monthDaysFormat = {"января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"};
-
-        String timeText = "" + calendar.get(Calendar.DAY_OF_MONTH) + " " + monthDaysFormat[calendar.get(Calendar.MONTH)];
-
+      SimpleDateFormat sdf = new SimpleDateFormat("MMMM", Locale.getDefault());
+        String timeText = "" + calendar.get(Calendar.DAY_OF_MONTH) + " " + sdf.format(calendar.getTime());
         drawer.drawTextSecondary(timeText, TEXT_SIZE_DAY_OF_WEEK, R.id.imageView_Day_Of_Year);
-
     }
 
     public static void drawEvent(Calendar calendar, textProcessor drawer, Context context) {
