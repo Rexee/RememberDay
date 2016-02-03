@@ -7,6 +7,6 @@
 
 
 
-[Mainpng]: https://cloud.githubusercontent.com/assets/8672252/12783966/7917a636-ca95-11e5-8874-83942059d259.png
+[Mainpng]: https://cloud.githubusercontent.com/assets/8672252/12785391/6d4c6082-ca9d-11e5-953f-84e1a8886b42.png
 [Google]:http://rexee.github.io/MistaReader/images/Google_Play_Store_48.png
 [GoogleTxt]: https://play.google.com/store/apps/details?id=com.rememberday
